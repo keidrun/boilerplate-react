@@ -7,7 +7,7 @@ const VENDOR_LIBS = ['react', 'react-dom'];
 
 module.exports = {
   entry: {
-    bundle: ['./src/index.jsx', './src/index.css', './src/index.html'],
+    bundle: ['./src/components/index.jsx', './src/styles/index.css', './src/index.html'],
     vendor: VENDOR_LIBS,
   },
   output: {

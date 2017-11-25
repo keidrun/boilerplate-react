@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Hello = ({ message, role, onChangeMessage }: Props) => (
-  <div className="hello" onMouseOver={() => onChangeMessage()}>
+  <div className="hello" onMouseOver={() => onChangeMessage()} onFocus={() => onChangeMessage()}>
     <p className="hello__text">
       {message} {role}
     </p>

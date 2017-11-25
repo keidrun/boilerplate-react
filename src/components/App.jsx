@@ -2,7 +2,16 @@
 import React, { Component } from 'react';
 import Hello from './Hello';
 
-const MESSAGES = ['Hello!', 'Hi!', 'Good morning!', 'Good after noon!', 'Bye!!!'];
+const MESSAGES = [
+  'Hello!',
+  'Hi!',
+  'Hey!!',
+  'Good morning!',
+  'Good after noon!',
+  'Good evening!',
+  'Good night!',
+  'Bye!!!',
+];
 const ROLES = [
   'Developer',
   'Designer',
@@ -22,9 +31,9 @@ type State = {
   role: string,
 };
 
-class App extends Component<void, State> {
-  constructor() {
-    super();
+class App extends Component<any, State> {
+  constructor(props: any) {
+    super(props);
     const initialState = randamState();
     this.state = {
       message: initialState.message,
@@ -34,6 +43,11 @@ class App extends Component<void, State> {
     this.handleChangeMessage = this.handleChangeMessage.bind(this);
   }
 
+  componentDidMount() {
+    document.title = "Keid's Boilerplate of React";
+  }
+
+  handleChangeMessage: Function;
   handleChangeMessage() {
     const changedState = randamState();
     this.setState({
