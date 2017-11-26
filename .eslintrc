@@ -7,9 +7,6 @@
   "extends": ["airbnb", "plugin:flowtype/recommended"],
   "plugins": ["flowtype"],
   "rules": {
-    "comma-dangle": "off",
-    "react/sort-comp": "off",
-    "jsx-a11y/href-no-hash": "off",
     "flowtype/define-flow-type": "warn",
     "flowtype/use-flow-type": "warn"
   },
