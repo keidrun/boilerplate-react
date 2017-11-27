@@ -11,8 +11,9 @@ This boilerplate provides an automatic web development environment with
 
 * transpile for CSS (PostCSS -> CSS)
 * attache CSS (normalize.css & autoprefixer)
+* lint for CSS (stylelint)
 * transpile for JS (React -> ES5)
-* check format (ESLint & Flow)
+* lint for JS (ESLint & Flow)
 * package (minify CSS & JS)
 
 ## Preconditions
