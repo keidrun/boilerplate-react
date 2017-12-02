@@ -6,7 +6,7 @@ module.exports = {
     'postcss-simple-vars': true,
     'postcss-nested': true,
     'postcss-mixins': true,
-    stylelint: true,
+    'postcss-import': { stylelint: true },
     autoprefixer: { browsers: BROWSERS },
     'postcss-normalize': { browsers: BROWSERS, forceImport: true },
     'postcss-sorting': true,
